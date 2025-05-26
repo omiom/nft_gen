@@ -1,0 +1,688 @@
+target_count: 420
+
+categories:
+  # Gender distribution - UNCHANGED from original
+  Gender:
+    traits:
+      Male:
+        target_count: 180
+        tolerance: 5
+      Female:
+        target_count: 180
+        tolerance: 5
+      Unisex:
+        target_count: 60
+        tolerance: 3
+
+  # Body types - gender_specific_to REMOVED
+  Body:
+    # gender_specific_to: "Gender" # <-- REMOVED
+    traits:
+      "Human Male":
+        gender: "Male"
+        target_count: 175
+        tolerance: 5
+      "Zombie":
+        gender: "Male" # Assuming Zombie is a Male body type as per original structure
+        target_count: 5
+        tolerance: 1
+      "Human Female":
+        gender: "Female"
+        target_count: 175
+        tolerance: 5
+      "Alien":
+        gender: "Female" # Assuming Alien is a Female body type as per original structure
+        target_count: 5
+        tolerance: 1
+      "Augmented":
+        gender: "Unisex"
+        target_count: 60
+        tolerance: 3
+
+  # Backgrounds - Minor adjustments for cleaner distribution
+  Background:
+    traits:
+      Alleyway:
+        target_count: 84
+        tolerance: 4
+      Warehouse:
+        target_count: 70
+        tolerance: 4
+      Bar:
+        target_count: 60
+        tolerance: 3
+      "City Rooftop":
+        target_count: 42
+        tolerance: 3
+      "Casino Floor":
+        target_count: 35
+        tolerance: 2
+      Backroom:
+        target_count: 30
+        tolerance: 2
+      "Market Stall":
+        target_count: 28
+        tolerance: 2
+      Bunker:
+        target_count: 21
+        tolerance: 2
+      Office:
+        target_count: 20
+        tolerance: 2
+      Arcade:
+        target_count: 14
+        tolerance: 2
+      "Shoji Hall":
+        target_count: 7
+        tolerance: 1
+      "Snow Forest":
+        target_count: 5
+        tolerance: 1
+      Cathedral:
+        target_count: 3
+        tolerance: 1
+      Laboratory:
+        target_count: 1
+        tolerance: 1
+
+  # Eyes - UNCHANGED from original
+  Eyes:
+    traits:
+      Brown:
+        target_count: 105
+        tolerance: 5
+      Blue:
+        target_count: 84
+        tolerance: 4
+      Green:
+        target_count: 60
+        tolerance: 3
+      Hazel:
+        target_count: 42
+        tolerance: 3
+      Gray:
+        target_count: 35
+        tolerance: 2
+      Sunglasses:
+        target_count: 30
+        tolerance: 2
+      Amber:
+        target_count: 21
+        tolerance: 2
+      "Augmented - Bionic Eye":
+        target_count: 20
+        tolerance: 2
+      Red:
+        target_count: 10
+        tolerance: 2
+      "Alien - Glowing Eyes":
+        target_count: 7
+        tolerance: 1
+      "Zombie - Glowing Green Eyes":
+        target_count: 5
+        tolerance: 1
+      Violet:
+        target_count: 1
+        tolerance: 1
+
+  # Rank - UNCHANGED from original
+  Rank:
+    traits:
+      Associate:
+        target_count: 210
+        tolerance: 5
+      "Made Man":
+        target_count: 105
+        tolerance: 5
+      Capo:
+        target_count: 70
+        tolerance: 4
+      Underboss:
+        target_count: 28
+        tolerance: 2
+      "Boss / Don":
+        target_count: 6
+        tolerance: 1
+      "Joker / Wildcard":
+        target_count: 1
+        tolerance: 1
+
+  # Hair Style - gender_specific_to REMOVED
+  "Hair Style":
+    # gender_specific_to: "Gender" # <-- REMOVED
+    traits:
+      # Male styles
+      "Slick-Back Undercut":
+        gender: "Male"
+        target_count: 42
+        tolerance: 3
+      "Classic Side Part":
+        gender: "Male"
+        target_count: 35
+        tolerance: 2
+      "Buzz Cut":
+        gender: "Male"
+        target_count: 30
+        tolerance: 2
+      Topknot:
+        gender: "Male"
+        target_count: 28
+        tolerance: 2
+      Mohawk:
+        gender: "Male"
+        target_count: 21
+        tolerance: 2
+      Pompadour:
+        gender: "Male"
+        target_count: 20
+        tolerance: 2
+      "Crew Cut":
+        gender: "Male"
+        target_count: 7
+        tolerance: 1
+      # Female styles
+      "High Ponytail":
+        gender: "Female"
+        target_count: 42
+        tolerance: 3
+      "Blunt Bob":
+        gender: "Female"
+        target_count: 35
+        tolerance: 2
+      "Pixie Cut":
+        gender: "Female"
+        target_count: 30
+        tolerance: 2
+      "Double Bun":
+        gender: "Female"
+        target_count: 28
+        tolerance: 2
+      "Sidecut Lob":
+        gender: "Female"
+        target_count: 21
+        tolerance: 2
+      "Straight Center-Part":
+        gender: "Female"
+        target_count: 21
+        tolerance: 2
+      # Unisex style
+      "Wolf Cut":
+        gender: "Unisex"
+        target_count: 60
+        tolerance: 3
+      "Chrome Spikes": 
+        gender: "Unisex" 
+        target_count: 0
+        tolerance: 0
+      "Fiber Optic Dreads": 
+        gender: "Unisex" 
+        target_count: 0
+        tolerance: 0
+      "Holographic Fade": 
+        gender: "Unisex" 
+        target_count: 0
+        tolerance: 0
+      "Geisha Updo": 
+        gender: "Female" 
+        target_count: 0
+        tolerance: 0
+
+  # Hair Color - UNCHANGED from original
+  "Hair Color":
+    traits:
+      Black:
+        target_count: 140
+        tolerance: 5
+      Brown:
+        target_count: 105
+        tolerance: 5
+      Blonde:
+        target_count: 84
+        tolerance: 4
+      Silver:
+        target_count: 42
+        tolerance: 3
+      Red:
+        target_count: 35
+        tolerance: 2
+      Blue:
+        target_count: 10
+        tolerance: 2
+      Pink:
+        target_count: 4
+        tolerance: 1
+      "Prismatic": 
+        target_count: 0
+        tolerance: 0
+      "Vantablack": 
+        target_count: 0
+        tolerance: 0
+
+  # Hat - UNCHANGED from original
+  Hat:
+    traits:
+      None:
+        target_count: 210
+        tolerance: 5
+      Fedora:
+        target_count: 35
+        tolerance: 2
+      "Baseball Cap":
+        target_count: 30
+        tolerance: 2
+      "Newsboy Cap":
+        target_count: 28
+        tolerance: 2
+      "Wide Brim Hat":
+        target_count: 21
+        tolerance: 2
+      "Panama Hat":
+        target_count: 20
+        tolerance: 2
+      "Bowler Hat":
+        target_count: 14
+        tolerance: 2
+      Beret:
+        target_count: 14
+        tolerance: 2
+      "Homburg Hat":
+        target_count: 12
+        tolerance: 2
+      "Gambler's Hat":
+        target_count: 10
+        tolerance: 2
+      "Italian Officer's Cap":
+        target_count: 7
+        tolerance: 1
+      "Ushanka (Fur Hat)":
+        target_count: 6
+        tolerance: 1
+      "Top Hat":
+        target_count: 4
+        tolerance: 1
+      "Card Dealer Visor":
+        target_count: 3
+        tolerance: 1
+      "Gray Homburg (Don's Variant)":
+        target_count: 2
+        tolerance: 1
+      "Snakeskin Hat":
+        target_count: 2
+        tolerance: 1
+      "Ritual Hood":
+        target_count: 1
+        tolerance: 1
+      "Clockwork Top Hat":
+        target_count: 1
+        tolerance: 1
+      "Crown of Shadows": 
+        target_count: 0
+        tolerance: 0
+
+  # Masks - UNCHANGED from original
+  Masks:
+    traits:
+      "No Mask":
+        target_count: 210
+        tolerance: 5
+      "Ski Mask":
+        target_count: 60
+        tolerance: 3
+      "Opera Mask":
+        target_count: 42
+        tolerance: 3
+      "Clown Mask":
+        target_count: 35
+        tolerance: 2
+      "Venetian Carnival":
+        target_count: 30
+        tolerance: 2
+      "Bone Mask":
+        target_count: 21
+        tolerance: 2
+      "Silver Skull":
+        target_count: 10
+        tolerance: 2
+      "Black Lung":
+        target_count: 6
+        tolerance: 1
+      "Inferno Mask":
+        target_count: 2
+        tolerance: 1
+      "Imperial Skull":
+        target_count: 1
+        tolerance: 1
+      "Crowface":
+        target_count: 1
+        tolerance: 1
+      "The Arbiter":
+        target_count: 1
+        tolerance: 1
+      "Hollow Man":
+        target_count: 1
+        tolerance: 1
+
+  # Outfit - gender_specific_to REMOVED
+  Outfit:
+    # gender_specific_to: "Gender" # <-- REMOVED
+    traits:
+      # Male outfits
+      "Collared Shirt":
+        gender: "Male"
+        target_count: 35
+        tolerance: 2
+      Suit:
+        gender: "Male"
+        target_count: 30
+        tolerance: 2
+      "Cargo Pants":
+        gender: "Male"
+        target_count: 30
+        tolerance: 2
+      Windbreaker:
+        gender: "Male"
+        target_count: 28
+        tolerance: 2
+      "Tweed Suit":
+        gender: "Male"
+        target_count: 21
+        tolerance: 2
+      Waistcoat:
+        gender: "Male"
+        target_count: 20
+        tolerance: 2
+      Tuxedo:
+        gender: "Male"
+        target_count: 10
+        tolerance: 2
+      "Zoot Suit":
+        gender: "Male"
+        target_count: 6
+        tolerance: 1
+      # Female outfits
+      "Hooded Dress":
+        gender: "Female"
+        target_count: 35
+        tolerance: 2
+      "Velvet Dress":
+        gender: "Female"
+        target_count: 30
+        tolerance: 2
+      "Puffer Jacket":
+        gender: "Female"
+        target_count: 30
+        tolerance: 2
+      Cheongsam:
+        gender: "Female"
+        target_count: 28
+        tolerance: 2
+      "Ao Dai":
+        gender: "Female"
+        target_count: 21
+        tolerance: 2
+      "Retro Dress":
+        gender: "Female"
+        target_count: 20
+        tolerance: 2
+      "Mink Coat":
+        gender: "Female"
+        target_count: 14
+        tolerance: 2
+      "Snow Suit":
+        gender: "Female"
+        target_count: 2
+        tolerance: 1
+      # Unisex outfits
+      Tracksuit:
+        gender: "Unisex"
+        target_count: 21
+        tolerance: 2
+      "Leather Jacket":
+        gender: "Unisex"
+        target_count: 14
+        tolerance: 2
+      Trenchcoat:
+        gender: "Unisex"
+        target_count: 12
+        tolerance: 2
+      Techwear:
+        gender: "Unisex"
+        target_count: 10
+        tolerance: 2
+      "Fur Coat":
+        gender: "Unisex"
+        target_count: 3
+        tolerance: 1
+
+  # Weapon - UNCHANGED from original
+  Weapon:
+    traits:
+      None:
+        target_count: 140
+        tolerance: 5
+      "Beretta 92 Inox":
+        target_count: 42
+        tolerance: 3
+      "Glock 22":
+        target_count: 42
+        tolerance: 3
+      "Walther PPK":
+        target_count: 35
+        tolerance: 2
+      Switchblade:
+        target_count: 35
+        tolerance: 2
+      "Colt Python":
+        target_count: 30
+        tolerance: 2
+      Uzi:
+        target_count: 28
+        tolerance: 2
+      "Baseball Bat":
+        target_count: 21
+        tolerance: 2
+      "Remington 870":
+        target_count: 20
+        tolerance: 2
+      "Tommy Gun":
+        target_count: 14
+        tolerance: 2
+      "Colt M4A1":
+        target_count: 7
+        tolerance: 1
+      "AK-47":
+        target_count: 5
+        tolerance: 1
+      Cane:
+        target_count: 1
+        tolerance: 1
+      "Energy Blade": 
+        target_count: 0
+        tolerance: 0
+
+  # Accessory - UNCHANGED from original
+  Accessory:
+    traits:
+      None:
+        target_count: 140
+        tolerance: 5
+      "White Gloves":
+        target_count: 84
+        tolerance: 4
+      "Leather Gloves":
+        target_count: 70
+        tolerance: 4
+      "Gold Ring":
+        target_count: 42
+        tolerance: 3
+      Briefcase:
+        target_count: 35
+        tolerance: 2
+      "Gold Watch":
+        target_count: 21
+        tolerance: 2
+      "Silver Watch":
+        target_count: 21
+        tolerance: 2
+      "Bolo Tie":
+        target_count: 7
+        tolerance: 1
+      "Data Chip": 
+        target_count: 0
+        tolerance: 0
+
+  # Glyph - RESTRUCTURED for 48 Laws of Power tiers
+  Glyph:
+    traits:
+      # Laws 1-7: Sovereign Tier (1 each = 7 total)
+      glyph_01:
+        target_count: 1
+        tolerance: 0
+      glyph_02:
+        target_count: 1
+        tolerance: 0
+      glyph_03:
+        target_count: 1
+        tolerance: 0
+      glyph_04:
+        target_count: 1
+        tolerance: 0
+      glyph_05:
+        target_count: 1
+        tolerance: 0
+      glyph_06:
+        target_count: 1
+        tolerance: 0
+      glyph_07:
+        target_count: 1
+        tolerance: 0
+      # Laws 8-14: Capo Tier (5 each = 35 total)
+      glyph_08:
+        target_count: 5
+        tolerance: 1
+      glyph_09:
+        target_count: 5
+        tolerance: 1
+      glyph_10:
+        target_count: 5
+        tolerance: 1
+      glyph_11:
+        target_count: 5
+        tolerance: 1
+      glyph_12:
+        target_count: 5
+        tolerance: 1
+      glyph_13:
+        target_count: 5
+        tolerance: 1
+      glyph_14:
+        target_count: 5
+        tolerance: 1
+      # Laws 15-28: Soldier Tier (6 each = 84 total)
+      glyph_15:
+        target_count: 6
+        tolerance: 1
+      glyph_16:
+        target_count: 6
+        tolerance: 1
+      glyph_17:
+        target_count: 6
+        tolerance: 1
+      glyph_18:
+        target_count: 6
+        tolerance: 1
+      glyph_19:
+        target_count: 6
+        tolerance: 1
+      glyph_20:
+        target_count: 6
+        tolerance: 1
+      glyph_21:
+        target_count: 6
+        tolerance: 1
+      glyph_22:
+        target_count: 6
+        tolerance: 1
+      glyph_23:
+        target_count: 6
+        tolerance: 1
+      glyph_24:
+        target_count: 6
+        tolerance: 1
+      glyph_25:
+        target_count: 6
+        tolerance: 1
+      glyph_26:
+        target_count: 6
+        tolerance: 1
+      glyph_27:
+        target_count: 6
+        tolerance: 1
+      glyph_28:
+        target_count: 6
+        tolerance: 1
+      # Laws 29-48: Street Tier (10 glyphs at 10, 10 glyphs at 11 = 210 total)
+      glyph_29:
+        target_count: 10
+        tolerance: 1
+      glyph_30:
+        target_count: 10
+        tolerance: 1
+      glyph_31:
+        target_count: 10
+        tolerance: 1
+      glyph_32:
+        target_count: 10
+        tolerance: 1
+      glyph_33:
+        target_count: 10
+        tolerance: 1
+      glyph_34:
+        target_count: 10
+        tolerance: 1
+      glyph_35:
+        target_count: 10
+        tolerance: 1
+      glyph_36:
+        target_count: 10
+        tolerance: 1
+      glyph_37:
+        target_count: 10
+        tolerance: 1
+      glyph_38:
+        target_count: 10
+        tolerance: 1
+      glyph_39: 
+        target_count: 11
+        tolerance: 1
+      glyph_40: 
+        target_count: 11
+        tolerance: 1
+      glyph_41: 
+        target_count: 11
+        tolerance: 1
+      glyph_42: 
+        target_count: 11
+        tolerance: 1
+      glyph_43: 
+        target_count: 11
+        tolerance: 1
+      glyph_44: 
+        target_count: 11
+        tolerance: 1
+      glyph_45: 
+        target_count: 11
+        tolerance: 1
+      glyph_46: 
+        target_count: 11
+        tolerance: 1
+      glyph_47: 
+        target_count: 11
+        tolerance: 1
+      glyph_48: 
+        target_count: 11
+        tolerance: 1
+      # The Unmarked
+      blank:
+        target_count: 84
+        tolerance: 3
